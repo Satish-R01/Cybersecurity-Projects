@@ -1,13 +1,9 @@
-# 🛡️ Cybersecurity Projects
+# Cybersecurity Projects
 
-Hands-on security tools built while learning **SOC, Network Security, Linux and VAPT**.
-Each project is self-contained, working, and includes sample data + tests.
+Small security tools I'm building while learning SOC, networking, Linux and VAPT. Each folder has its own README, sample data and tests.
 
-| # | Project | What it does | Skills |
-|---|---|---|---|
-| 01 | [SSH Brute-Force Detector](./01-SSH-Brute-Force-Detector) | Detects brute-force & password-spraying in Linux `auth.log`, flags compromised accounts, maps to MITRE T1110 | Python, Log Analysis, SOC Triage, MITRE ATT&CK |
+| No. | Project | Description |
+|---|---|---|
+| 01 | [SSH Brute-Force Detector](./01-SSH-Brute-Force-Detector) | Finds brute-force and password spraying in Linux auth.log |
 
-_New projects added regularly._
-
-## Author
-**Satish R** — Cybersecurity trainee (SOC | Network | Linux | VAPT) · [LinkedIn](https://www.linkedin.com/in/cybersatish)
+Satish R - https://www.linkedin.com/in/cybersatish
