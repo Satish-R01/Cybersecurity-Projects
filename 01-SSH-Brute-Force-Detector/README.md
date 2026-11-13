@@ -1,42 +1,32 @@
-# 🔐 SSH Brute-Force Detector
+# SSH Brute-Force Detector
 
-A lightweight Python tool that reads Linux SSH authentication logs (`/var/log/auth.log`) and detects brute-force and password-spraying attacks — the same triage a **SOC L1 analyst** does on failed-login alerts.
+Python script that reads Linux SSH auth logs (/var/log/auth.log) and finds brute-force and password-spraying attempts. I made it to practice the kind of failed-login triage a SOC L1 analyst does.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![MITRE](https://img.shields.io/badge/MITRE%20ATT%26CK-T1110-red) ![License](https://img.shields.io/badge/License-MIT-green)
+## What it does
+- Parses "Failed password", "Invalid user" and "Accepted" lines from sshd
+- Counts failed attempts per IP inside a time window (default 5 fails in 10 min)
+- If the same IP later logs in successfully, marks it CRITICAL (possible compromise)
+- Few usernames from one IP = password guessing (T1110.001), many usernames = password spraying (T1110.003)
+- Can save results to JSON or CSV
+- Only uses the Python standard library
 
-## Features
-- Parses `Failed password` / `Invalid user` / `Accepted` SSH events
-- Sliding time-window detection (default: 5+ failures in 10 minutes)
-- Flags **successful login after failures** → possible account compromise (CRITICAL)
-- Distinguishes **Password Guessing (T1110.001)** vs **Password Spraying (T1110.003)**
-- Severity scoring: CRITICAL / HIGH / MEDIUM / LOW
-- Export alerts to **JSON** or **CSV** (ready for a SIEM or Excel)
-- Zero dependencies — Python standard library only
-- Exit code `1` when alerts are found (easy to use in cron / scripts)
-
-## Usage
-```bash
+## How to run
+```
 git clone https://github.com/Satish-R01/Cybersecurity-Projects.git
 cd Cybersecurity-Projects/01-SSH-Brute-Force-Detector
 
-# Run on the included sample log
 python3 detector.py sample_logs/auth.log -y 2026
-
-# Run on a real server log
 sudo python3 detector.py /var/log/auth.log
-
-# Custom threshold/window + reports
 python3 detector.py sample_logs/auth.log -y 2026 -t 8 -w 5 --json alerts.json --csv alerts.csv
 ```
 
-| Option | Meaning | Default |
-|---|---|---|
-| `-t, --threshold` | Failed attempts that trigger an alert | 5 |
-| `-w, --window` | Time window in minutes | 10 |
-| `-y, --year` | Year of the log (syslog lines have no year) | current |
-| `--json / --csv` | Save alerts to a file | – |
+Options:
+- `-t` number of fails needed for an alert (default 5)
+- `-w` time window in minutes (default 10)
+- `-y` year of the log, because syslog lines don't have a year
+- `--json`, `--csv` save the alerts
 
-## Sample output
+## Output on the sample log
 ```
 [!] 3 suspicious IP(s) found
 
@@ -51,31 +41,19 @@ MEDIUM    103.21.44.9         12    12  T1110.003 Password Spraying
           users: admin, guest, oracle, postgres, test, ubuntu
 ```
 
-## How it works
-1. Regex-parses each sshd line into (timestamp, user, source IP).
-2. Groups failures by IP and finds the peak count inside any sliding window.
-3. IPs above the threshold become alerts; one or two usernames = guessing, many = spraying.
-4. If the same IP later logs in successfully, the alert is escalated to **CRITICAL**.
+The sample log is made up. It has one normal user, one IP attacking root, one IP spraying common usernames, one IP that gets in after 8 tries, and one slow IP that stays under the threshold.
 
-## Response playbook (SOC L1)
-| Severity | Action |
-|---|---|
-| CRITICAL | Isolate host, disable/reset the account, check `last`/`history`, escalate to L2 |
-| HIGH | Block IP (`ufw deny from <ip>` / firewall), check threat intel (AbuseIPDB) |
-| MEDIUM | Block or monitor, verify targeted accounts exist |
-| LOW | Monitor |
+## What I'd do as L1 after an alert
+- CRITICAL: disable/reset the account, check `last` and bash history on the server, escalate to L2
+- HIGH: block the IP (`sudo ufw deny from <ip>`), check it on AbuseIPDB
+- MEDIUM/LOW: block or keep watching
 
-**Hardening:** key-based SSH auth, disable root login, `fail2ban`, MFA, non-default port.
+To prevent it: SSH keys instead of passwords, no root login, fail2ban.
 
 ## Tests
-```bash
+```
 pip install pytest
-python3 -m pytest -q tests
+python3 -m pytest tests
 ```
 
-## Author
-**Satish R** — Cybersecurity trainee (SOC | Network | Linux | VAPT)
-[LinkedIn](https://www.linkedin.com/in/cybersatish)
-
-## License
-MIT
+Satish R - https://www.linkedin.com/in/cybersatish
