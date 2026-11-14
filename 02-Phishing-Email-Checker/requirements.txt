@@ -1,0 +1,2 @@
+# Only the Python 3.8+ standard library is used.
+pytest>=7.0  # only for running tests
