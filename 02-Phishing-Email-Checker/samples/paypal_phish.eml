@@ -1,0 +1,29 @@
+Return-Path: <bounce@mailer-xyz.ru>
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=mailer-xyz.ru; dkim=none; dmarc=fail header.from=paypa1-support.com
+From: PayPal Security <service@paypa1-support.com>
+Reply-To: help.desk.verify@gmail.com
+To: satish@example.com
+Subject: URGENT: Your account has been suspended
+Date: Fri, 13 Nov 2026 11:42:10 +0530
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="XYZ"
+
+--XYZ
+Content-Type: text/html; charset="utf-8"
+
+<html><body>
+<p>Dear Customer,</p>
+<p>We noticed unusual activity on your account. Your account has been suspended.
+Please verify your account within 24 hours or your account will be closed.</p>
+<p><a href="http://45.67.89.10/paypal/login.php">https://www.paypal.com/signin</a></p>
+<p>PayPal Security Team</p>
+</body></html>
+
+--XYZ
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="Invoice_8812.pdf.exe"
+Content-Transfer-Encoding: base64
+
+VGhpcyBpcyBhIGhhcm1sZXNzIHNhbXBsZSBmaWxlIG1hZGUgZm9yIHRlc3RpbmcuIEl0IGlzIG5v
+dCBtYWx3YXJlLgo=
+--XYZ--
