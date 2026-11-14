@@ -1,0 +1,16 @@
+Return-Path: <news@github.com>
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass header.from=github.com
+From: GitHub <news@github.com>
+To: satish@example.com
+Subject: Your monthly GitHub update
+Date: Fri, 13 Nov 2026 09:00:00 +0530
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+
+Hi Satish,
+
+Here is what changed on GitHub this month. Read the full changelog here:
+https://github.blog/changelog/
+
+Thanks,
+The GitHub Team
