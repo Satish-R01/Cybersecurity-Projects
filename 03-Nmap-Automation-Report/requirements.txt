@@ -1,0 +1,3 @@
+# Only the Python 3.8+ standard library is used.
+# nmap itself must be installed to run live scans (not needed with --xml).
+pytest>=7.0  # only for running tests
