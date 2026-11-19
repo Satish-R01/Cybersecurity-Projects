@@ -10,5 +10,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 04 | [File Integrity Monitor](./04-File-Integrity-Monitor) | Makes a SHA-256 baseline of a folder and reports modified, new, deleted files and permission changes |
 | 05 | [Web Attack Log Detector](./05-Web-Attack-Log-Detector) | Reads Apache/Nginx access logs and finds SQL injection, XSS, path traversal, scanners and directory brute-forcing |
 | 06 | [DNS Tunneling Detector](./06-DNS-Tunneling-Detector) | Reads Zeek dns.log and finds DNS tunneling and data exfiltration using length, entropy, TXT/NULL queries and hex decoding |
+| 07 | [JWT Security Tester](./07-JWT-Security-Tester) | Checks a JSON Web Token for alg none, weak HMAC secrets, missing or long expiry and sensitive claims, and can forge an alg:none token to test the server |
 
 Satish R - https://www.linkedin.com/in/cybersatish
