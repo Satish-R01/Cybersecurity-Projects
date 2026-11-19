@@ -1,0 +1,3 @@
+# domains I trust, one per line
+akamaiedge.net
+microsoftonline.com
