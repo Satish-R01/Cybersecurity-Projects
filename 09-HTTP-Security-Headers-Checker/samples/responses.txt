@@ -1,0 +1,32 @@
+# url: https://shop.example.test/
+HTTP/1.1 200 OK
+Server: Apache/2.4.29 (Ubuntu)
+X-Powered-By: PHP/7.2.24
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: PHPSESSID=abc123; path=/
+Cache-Control: public, max-age=3600
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+###
+# url: https://app.example.test/login
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: text/html
+Strict-Transport-Security: max-age=300
+Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'
+X-Frame-Options: ALLOWALL
+X-Content-Type-Options: nosniff
+Set-Cookie: session=xyz; Secure; HttpOnly
+Referrer-Policy: unsafe-url
+###
+# url: https://secure.example.test/
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: text/html
+Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+Content-Security-Policy: default-src 'self'; frame-ancestors 'none'
+X-Content-Type-Options: nosniff
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), camera=()
+Set-Cookie: sid=q1w2e3; Secure; HttpOnly; SameSite=Strict
+Cache-Control: no-store
