@@ -1,0 +1,5 @@
+# one URL per line, the parameter to test is in the query string
+# start the lab first: python3 lab_app.py 8000
+http://127.0.0.1:8000/login?next=/dashboard
+http://127.0.0.1:8000/go?url=/home
+http://127.0.0.1:8000/safe?next=/profile

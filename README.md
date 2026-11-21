@@ -14,5 +14,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 08 | [Windows Event Log Analyzer](./08-Windows-Event-Log-Analyzer) | Reads Windows event logs (JSON lines) and finds brute force, new admin users, encoded PowerShell, bad services and cleared logs |
 | 09 | [HTTP Security Headers Checker](./09-HTTP-Security-Headers-Checker) | Reads saved HTTP responses and checks CSP, HSTS, clickjacking headers, CORS, cookie flags and version leaks, then gives a score and grade |
 | 10 | [Suricata Alert Summarizer](./10-Suricata-Alert-Summarizer) | Reads Suricata eve.json and summarizes alerts by signature, maps them to MITRE ATT&CK and lists high severity alerts that were not blocked |
+| 11 | [Open Redirect Tester](./11-Open-Redirect-Tester) | Tests URL parameters with redirect payloads and bypass tricks against a local lab app and reports when the Location header leaves the host |
 
 Satish R - https://www.linkedin.com/in/cybersatish

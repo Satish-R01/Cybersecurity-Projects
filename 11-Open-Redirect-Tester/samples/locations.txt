@@ -1,0 +1,6 @@
+# sample Location headers, handy to see what counts as external
+/dashboard
+https://app.example.com/home
+//evil.example/
+/\evil.example
+https:evil.example
