@@ -1,0 +1,5 @@
+# local lab app only (python3 lab_app.py 8000)
+http://127.0.0.1:8000/search?q=test
+http://127.0.0.1:8000/greet?name=satish
+http://127.0.0.1:8000/attr?v=hello
+http://127.0.0.1:8000/safe?q=test

@@ -16,5 +16,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 10 | [Suricata Alert Summarizer](./10-Suricata-Alert-Summarizer) | Reads Suricata eve.json and summarizes alerts by signature, maps them to MITRE ATT&CK and lists high severity alerts that were not blocked |
 | 11 | [Open Redirect Tester](./11-Open-Redirect-Tester) | Tests URL parameters with redirect payloads and bypass tricks against a local lab app and reports when the Location header leaves the host |
 | 12 | [Honeypot Log Parser](./12-Honeypot-Log-Parser) | Reads Cowrie SSH honeypot logs and finds brute force, scanners and attackers who logged in, then flags downloads, SSH keys, miners and maps them to MITRE ATT&CK |
+| 13 | [Reflected XSS Tester](./13-Reflected-XSS-Tester) | Sends XSS payloads to URL parameters of a local lab app and checks if the value comes back unencoded, and in which context |
 
 Satish R - https://www.linkedin.com/in/cybersatish
