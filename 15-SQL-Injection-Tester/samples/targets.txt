@@ -1,0 +1,4 @@
+# one URL per line, lab app only
+http://127.0.0.1:8000/product?id=1
+http://127.0.0.1:8000/search?q=mouse
+http://127.0.0.1:8000/safe?id=1

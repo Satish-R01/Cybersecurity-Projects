@@ -1,0 +1,6 @@
+Database error: near "'": syntax error
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ERROR: unterminated quoted string at or near "'"
+Unclosed quotation mark after the character string ''.
+ORA-01756: quoted string not properly terminated
+Product not found

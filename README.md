@@ -18,5 +18,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 12 | [Honeypot Log Parser](./12-Honeypot-Log-Parser) | Reads Cowrie SSH honeypot logs and finds brute force, scanners and attackers who logged in, then flags downloads, SSH keys, miners and maps them to MITRE ATT&CK |
 | 13 | [Reflected XSS Tester](./13-Reflected-XSS-Tester) | Sends XSS payloads to URL parameters of a local lab app and checks if the value comes back unencoded, and in which context |
 | 14 | [Firewall Log Analyzer](./14-Firewall-Log-Analyzer) | Reads iptables/UFW logs and finds port scans, host sweeps, repeated hits on sensitive ports and blocked outbound beaconing, with MITRE ATT&CK IDs |
+| 15 | [SQL Injection Tester](./15-SQL-Injection-Tester) | Tests URL parameters for error-based and boolean-based SQL injection against a local lab app and shows the evidence |
 
 Satish R - https://www.linkedin.com/in/cybersatish
