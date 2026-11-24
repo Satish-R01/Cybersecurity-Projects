@@ -1,0 +1,4 @@
+# template | ids | token | user
+http://127.0.0.1:8000/api/orders/{id} | 101-104 | alice-token | alice
+http://127.0.0.1:8000/api/safe-orders/{id} | 101-104 | alice-token | alice
+http://127.0.0.1:8000/api/profile/{id} | 1-4 | alice-token | alice

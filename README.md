@@ -20,5 +20,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 14 | [Firewall Log Analyzer](./14-Firewall-Log-Analyzer) | Reads iptables/UFW logs and finds port scans, host sweeps, repeated hits on sensitive ports and blocked outbound beaconing, with MITRE ATT&CK IDs |
 | 15 | [SQL Injection Tester](./15-SQL-Injection-Tester) | Tests URL parameters for error-based and boolean-based SQL injection against a local lab app and shows the evidence |
 | 16 | [Linux Auditd Analyzer](./16-Linux-Auditd-Analyzer) | Reads the Linux audit log and finds reverse shells, encoded commands, programs run from /tmp, changes to passwd and shadow, new accounts and audit tampering, with MITRE ATT&CK IDs |
+| 17 | [IDOR Tester](./17-IDOR-Tester) | Walks a range of object IDs with one user's token against a local lab app and reports the ones that return another user's data |
 
 Satish R - https://www.linkedin.com/in/cybersatish
