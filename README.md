@@ -19,5 +19,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 13 | [Reflected XSS Tester](./13-Reflected-XSS-Tester) | Sends XSS payloads to URL parameters of a local lab app and checks if the value comes back unencoded, and in which context |
 | 14 | [Firewall Log Analyzer](./14-Firewall-Log-Analyzer) | Reads iptables/UFW logs and finds port scans, host sweeps, repeated hits on sensitive ports and blocked outbound beaconing, with MITRE ATT&CK IDs |
 | 15 | [SQL Injection Tester](./15-SQL-Injection-Tester) | Tests URL parameters for error-based and boolean-based SQL injection against a local lab app and shows the evidence |
+| 16 | [Linux Auditd Analyzer](./16-Linux-Auditd-Analyzer) | Reads the Linux audit log and finds reverse shells, encoded commands, programs run from /tmp, changes to passwd and shadow, new accounts and audit tampering, with MITRE ATT&CK IDs |
 
 Satish R - https://www.linkedin.com/in/cybersatish
