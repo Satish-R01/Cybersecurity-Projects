@@ -1,0 +1,3 @@
+# ip mac pairs I know are correct
+# gateway MAC from the router label / admin page
+192.168.1.1 3c:52:82:4a:10:01
