@@ -1,0 +1,35 @@
+{"time": "2024-05-14T09:05:10Z", "event": "login_success", "src_ip": "10.10.2.10", "user": "asha"}
+{"time": "2024-05-14T09:06:10Z", "event": "login_success", "src_ip": "10.10.2.11", "user": "ravi"}
+{"time": "2024-05-14T09:07:10Z", "event": "login_success", "src_ip": "10.10.2.12", "user": "meena"}
+{"time": "2024-05-14T09:08:10Z", "event": "login_success", "src_ip": "10.10.2.13", "user": "john"}
+{"time": "2024-05-14T09:30:00Z", "event": "login_failed", "src_ip": "10.10.2.11", "user": "ravi"}
+{"time": "2024-05-14T09:30:20Z", "event": "login_failed", "src_ip": "10.10.2.11", "user": "ravi"}
+{"time": "2024-05-14T09:31:00Z", "event": "login_success", "src_ip": "10.10.2.11", "user": "ravi"}
+{"time": "2024-05-14T10:02:10Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:02:15Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:02:20Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:02:25Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:02:30Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:02:35Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:02:40Z", "event": "login_failed", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T10:03:05Z", "event": "login_success", "src_ip": "203.0.113.45", "user": "admin"}
+{"time": "2024-05-14T11:15:00Z", "event": "login_failed", "src_ip": "198.51.100.9", "user": "root"}
+{"time": "2024-05-14T12:10:00Z", "event": "user_created", "host": "WS-04", "target_user": "svc_backup2", "by": "admin"}
+{"time": "2024-05-14T12:14:30Z", "event": "group_add", "host": "WS-04", "target_user": "svc_backup2", "group": "Administrators"}
+{"time": "2024-05-14T12:15:00Z", "event": "login_failed", "src_ip": "198.51.100.9", "user": "root"}
+{"time": "2024-05-14T13:00:00Z", "event": "user_created", "host": "WS-07", "target_user": "newhire1", "by": "hr_admin"}
+{"time": "2024-05-14T13:02:00Z", "event": "group_add", "host": "WS-07", "target_user": "newhire1", "group": "Users"}
+{"time": "2024-05-14T13:15:00Z", "event": "login_failed", "src_ip": "198.51.100.9", "user": "root"}
+{"time": "2024-05-14T14:15:00Z", "event": "login_failed", "src_ip": "198.51.100.9", "user": "root"}
+{"time": "2024-05-14T14:20:00Z", "event": "file_download", "host": "WS-12", "ext": "exe", "url": "http://198.51.100.77/upd.exe"}
+{"time": "2024-05-14T14:21:40Z", "event": "process_start", "host": "WS-12", "parent": "powershell.exe", "process": "upd.exe"}
+{"time": "2024-05-14T14:25:00Z", "event": "file_download", "host": "WS-15", "ext": "pdf", "url": "http://example.com/a.pdf"}
+{"time": "2024-05-14T14:26:00Z", "event": "process_start", "host": "WS-15", "parent": "explorer.exe", "process": "AcroRd32.exe"}
+{"time": "2024-05-14T15:00:00Z", "event": "vpn_login", "user": "ravi", "src_ip": "192.0.2.50"}
+{"time": "2024-05-14T15:12:00Z", "event": "large_upload", "user": "ravi", "host": "WS-03", "dest": "mega.nz", "mb": 420}
+{"time": "2024-05-14T15:15:00Z", "event": "login_failed", "src_ip": "198.51.100.9", "user": "root"}
+{"time": "2024-05-14T15:25:00Z", "event": "large_upload", "user": "ravi", "host": "WS-03", "dest": "mega.nz", "mb": 380}
+{"time": "2024-05-14T15:30:00Z", "event": "vpn_login", "user": "asha", "src_ip": "192.0.2.60"}
+{"time": "2024-05-14T15:40:00Z", "event": "large_upload", "user": "asha", "host": "WS-01", "dest": "drive.google.com", "mb": 300}
+{"time": "2024-05-14T16:15:00Z", "event": "login_failed", "src_ip": "198.51.100.9", "user": "root"}
+{"time": "2024-05-14T17:40:00Z", "event": "login_success", "src_ip": "198.51.100.9", "user": "root"}

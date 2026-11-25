@@ -22,5 +22,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 16 | [Linux Auditd Analyzer](./16-Linux-Auditd-Analyzer) | Reads the Linux audit log and finds reverse shells, encoded commands, programs run from /tmp, changes to passwd and shadow, new accounts and audit tampering, with MITRE ATT&CK IDs |
 | 17 | [IDOR Tester](./17-IDOR-Tester) | Walks a range of object IDs with one user's token against a local lab app and reports the ones that return another user's data |
 | 18 | [ARP Spoofing Detector](./18-ARP-Spoofing-Detector) | Reads saved tcpdump ARP traffic or an arp -a table and finds ARP spoofing, like a changed gateway MAC, one MAC for many IPs, unsolicited replies and ARP scans (CEH Module 08 Sniffing) |
+| 19 | [SIEM Correlation Engine](./19-SIEM-Correlation-Engine) | Reads JSON log events and a rules file and finds attack chains like brute force then successful login, new admin user, download then execute and VPN login then big uploads, with MITRE ATT&CK IDs |
 
 Satish R - https://www.linkedin.com/in/cybersatish
