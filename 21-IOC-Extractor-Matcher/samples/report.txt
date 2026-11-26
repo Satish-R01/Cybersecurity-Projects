@@ -1,0 +1,17 @@
+Incident note IR-2026-114: suspected Emotet style phishing, 24 Nov 2026
+
+A user in Finance opened invoice_nov.docx from an email sent by billing@invoice-portal[.]top.
+The sender address was spoofed, the real relay was 45[.]61[.]137[.]22 (defanged here).
+The macro ran PowerShell that downloaded a second stage from hxxp://cdn.update-check[.]xyz/stage2.ps1
+and also from http://185.220.77.14:8080/load.bin
+
+Hashes of the dropped files:
+  invoice_nov.docx  MD5 5d41402abc4b2a76b9719d911017c592
+  stage2.ps1        SHA1 aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
+  load.bin          SHA256 9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08
+
+The loader checks in to c2.update-check.xyz every 60 seconds. It talks to 185.220.77.14 on port 8080.
+Normal traffic seen on the same host: 10.20.30.40 to 8.8.8.8, and microsoft.com, github.com.
+The exploit used was CVE-2017-11882 (Equation Editor). Also seen: CVE-2023-23397.
+Reported to abuse@hosting-provider.example by the SOC.
+Version 3.2.1 of the agent was installed. Bad value 999.1.2.3 is not an IP.

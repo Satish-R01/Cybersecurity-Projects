@@ -1,0 +1,7 @@
+# indicator,tag
+invoice-portal.top,phishing sender domain
+update-check.xyz,emotet c2
+45.61.137.22,known spam relay
+185.220.77.14,emotet payload server
+9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08,emotet loader
+5d41402abc4b2a76b9719d911017c592,malicious docx

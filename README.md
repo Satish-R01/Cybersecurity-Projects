@@ -24,5 +24,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 18 | [ARP Spoofing Detector](./18-ARP-Spoofing-Detector) | Reads saved tcpdump ARP traffic or an arp -a table and finds ARP spoofing, like a changed gateway MAC, one MAC for many IPs, unsolicited replies and ARP scans (CEH Module 08 Sniffing) |
 | 19 | [SIEM Correlation Engine](./19-SIEM-Correlation-Engine) | Reads JSON log events and a rules file and finds attack chains like brute force then successful login, new admin user, download then execute and VPN login then big uploads, with MITRE ATT&CK IDs |
 | 20 | [CSRF Token Checker](./20-CSRF-Token-Checker) | Finds POST forms and tests a local lab app to see if the CSRF token is missing, static, or not really checked by the server |
+| 21 | [IOC Extractor and Matcher](./21-IOC-Extractor-Matcher) | Reads a threat report, pulls out IPs, domains, URLs, hashes, emails and CVEs (even defanged ones) and matches them with a blocklist |
 
 Satish R - https://www.linkedin.com/in/cybersatish
