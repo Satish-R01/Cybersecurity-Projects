@@ -1,0 +1,4 @@
+python3 lab_app.py 8000 &
+python3 dir_fuzzer.py http://127.0.0.1:8000 --wordlist samples/wordlist.txt
+python3 dir_fuzzer.py http://127.0.0.1:8000 --wordlist samples/wordlist.txt --extensions .bak,.zip,.txt
+python3 dir_fuzzer.py http://127.0.0.1:8000 --wordlist samples/wordlist.txt --json

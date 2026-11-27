@@ -1,0 +1,24 @@
+# small wordlist for the lab app
+admin
+login
+api
+assets
+backup
+config
+uploads
+test
+dev
+old
+phpinfo
+server-status
+.git/HEAD
+.env
+.htaccess
+robots.txt
+sitemap.xml
+backup.zip
+db_backup
+config
+index
+secret
+console

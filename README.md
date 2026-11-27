@@ -27,5 +27,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 21 | [IOC Extractor and Matcher](./21-IOC-Extractor-Matcher) | Reads a threat report, pulls out IPs, domains, URLs, hashes, emails and CVEs (even defanged ones) and matches them with a blocklist |
 | 22 | [Login Rate Limit Tester](./22-Login-Rate-Limit-Tester) | Sends a fixed number of wrong logins to a local lab app and checks if the server ever blocks, rate limits or locks the account |
 | 23 | [Beaconing Detector](./23-Beaconing-Detector) | Reads proxy logs and finds C2 beaconing by checking for connections to one domain at regular intervals, with MITRE ATT&CK IDs |
+| 24 | [Directory Fuzzer](./24-Directory-Fuzzer) | Tries paths from a wordlist on a local lab app and finds hidden files like .env, .git and backups, while filtering out soft 404 pages |
 
 Satish R - https://www.linkedin.com/in/cybersatish
