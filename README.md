@@ -26,5 +26,6 @@ Small security tools I'm building while learning SOC, networking, Linux and VAPT
 | 20 | [CSRF Token Checker](./20-CSRF-Token-Checker) | Finds POST forms and tests a local lab app to see if the CSRF token is missing, static, or not really checked by the server |
 | 21 | [IOC Extractor and Matcher](./21-IOC-Extractor-Matcher) | Reads a threat report, pulls out IPs, domains, URLs, hashes, emails and CVEs (even defanged ones) and matches them with a blocklist |
 | 22 | [Login Rate Limit Tester](./22-Login-Rate-Limit-Tester) | Sends a fixed number of wrong logins to a local lab app and checks if the server ever blocks, rate limits or locks the account |
+| 23 | [Beaconing Detector](./23-Beaconing-Detector) | Reads proxy logs and finds C2 beaconing by checking for connections to one domain at regular intervals, with MITRE ATT&CK IDs |
 
 Satish R - https://www.linkedin.com/in/cybersatish
