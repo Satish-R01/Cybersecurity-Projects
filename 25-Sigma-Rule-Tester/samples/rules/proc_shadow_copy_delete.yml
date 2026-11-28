@@ -1,0 +1,30 @@
+title: Shadow Copies Deleted
+id: 9d4b6c18-5e3f-4c7a-b2d9-1a8e7f6c3b04
+status: stable
+description: vssadmin, wmic or wbadmin used to delete backups. Ransomware does this before it encrypts files.
+author: Satish R
+date: 2026/11/28
+tags:
+  - attack.impact
+  - attack.t1490
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_vss:
+    Image|endswith: '\vssadmin.exe'
+    CommandLine|contains|all:
+      - 'delete'
+      - 'shadows'
+  selection_wmic:
+    Image|endswith: '\wmic.exe'
+    CommandLine|contains|all:
+      - 'shadowcopy'
+      - 'delete'
+  selection_wbadmin:
+    Image|endswith: '\wbadmin.exe'
+    CommandLine|contains: 'delete catalog'
+  condition: 1 of selection_*
+falsepositives:
+  - Backup software cleaning old copies
+level: critical

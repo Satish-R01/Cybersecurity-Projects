@@ -1,0 +1,13 @@
+title: Suspicious Mimikatz Name
+id: 6e2b8a31-4c7d-4f19-a0b5-3d9e1c7f5a07
+status: experimental
+description: Rule I left with problems on purpose so the checker has something to report.
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\mimikatz.exe'
+  empty_one: {}
+  condition: selection
+level: severe

@@ -1,0 +1,28 @@
+title: Account And Domain Discovery Commands
+id: 1f7d3e65-2a9b-4c0d-8e41-5b6a9c8d2e06
+status: test
+description: net, nltest or whoami commands that list users, groups or domain controllers.
+author: Satish R
+date: 2026/11/28
+tags:
+  - attack.discovery
+  - attack.t1087.002
+  - attack.t1482
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_net:
+    Image|endswith:
+      - '\net.exe'
+      - '\net1.exe'
+    CommandLine|re: 'net1?\s+(user|group|localgroup)\s.*(/domain|"domain admins"|administrators)'
+  selection_nltest:
+    Image|endswith: '\nltest.exe'
+    CommandLine|contains:
+      - 'dclist'
+      - 'domain_trusts'
+  condition: selection_net or selection_nltest
+falsepositives:
+  - Admins checking group members
+level: low

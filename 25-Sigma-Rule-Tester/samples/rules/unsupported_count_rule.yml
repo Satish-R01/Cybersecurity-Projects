@@ -1,0 +1,19 @@
+title: Many Failed Logons From One Host
+id: 8a5c1d27-6b3e-4e92-b7f4-9e0d2a1c4b08
+status: test
+description: Needs a count over time. This tester does not run aggregation rules, so it is skipped.
+author: Satish R
+date: 2026/11/28
+tags:
+  - attack.credential_access
+  - attack.t1110
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4625
+  condition: selection | count(TargetUserName) by IpAddress > 10
+falsepositives:
+  - Users who forgot their password
+level: medium

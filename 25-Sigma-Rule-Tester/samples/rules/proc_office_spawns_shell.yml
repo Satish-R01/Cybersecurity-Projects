@@ -1,0 +1,29 @@
+title: Office App Starts Command Shell
+id: 7c3e9b44-1d2a-4a6e-8f50-6b9d2e4c0a02
+status: stable
+description: Word, Excel or PowerPoint starting cmd or PowerShell. This is common after a malicious macro is enabled.
+author: Satish R
+date: 2026/11/28
+tags:
+  - attack.initial_access
+  - attack.execution
+  - attack.t1204.002
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection_parent:
+    ParentImage|endswith:
+      - '\winword.exe'
+      - '\excel.exe'
+      - '\powerpnt.exe'
+  selection_child:
+    Image|endswith:
+      - '\cmd.exe'
+      - '\powershell.exe'
+      - '\wscript.exe'
+      - '\mshta.exe'
+  condition: selection_parent and selection_child
+falsepositives:
+  - Office add-ins that run scripts
+level: high

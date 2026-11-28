@@ -1,0 +1,27 @@
+title: Scheduled Task Created From User Folder
+id: 4b6a2d90-7f1e-4d8c-93a5-8c2e1f0b7d05
+status: test
+description: schtasks creating a task that runs a file from Temp, AppData or Public. Used for persistence.
+author: Satish R
+date: 2026/11/28
+tags:
+  - attack.persistence
+  - attack.t1053.005
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith: '\schtasks.exe'
+    CommandLine|contains: '/create'
+  selection_path:
+    CommandLine|contains:
+      - '\AppData\'
+      - '\Temp\'
+      - '\Users\Public\'
+  filter_admin:
+    User|startswith: 'NT AUTHORITY'
+  condition: selection and selection_path and not filter_admin
+falsepositives:
+  - Software installers that make their own update task
+level: medium

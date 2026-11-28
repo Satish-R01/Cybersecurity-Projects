@@ -1,0 +1,3 @@
+# PyYAML is used to read the Sigma rule files.
+pyyaml
+pytest
