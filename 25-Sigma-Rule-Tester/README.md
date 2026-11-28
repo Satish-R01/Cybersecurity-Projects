@@ -70,7 +70,7 @@ The events are made up. There are 88 process creation events on 5 hosts, and mos
 - SRV-FILE-01: vssadmin and wbadmin delete the backups. A scheduled task from `C:\Users\Public` is also there, but it runs as SYSTEM, so the `filter_admin` part of the rule leaves it out. I added it to test the `not` condition
 - `bad_rule_example.yml` has problems on purpose and `unsupported_count_rule.yml` uses `count()`, so the tester skips it
 
-The rule folder has 7 normal rules, but only 6 fire. The Mimikatz rule has no match, which is expected for this data.
+The rule folder has 8 files. 7 of them run and 6 fire. The Mimikatz rule has no match, which is expected for this data.
 
 ## What I'd do as L1 after an alert
 - Read the matching event: host, user, parent process and full command line
